@@ -1,0 +1,126 @@
+header {
+    background-color: #008F88;
+    min-height: 150px;
+}
+
+header img {
+    max-width: 130px;
+}
+
+.layout-header {
+    padding: 1rem;
+    display: flex;          
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-size: 96px;
+    color: #fff;
+}
+
+.element-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;  
+}
+
+.element-buttons button {
+    width: 140px;
+    height: 70px;
+    border-radius: 10px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.element-buttons .btnHELP {
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+}
+
+.element-buttons .btnLOG {
+    background-color: black;
+    border: none;
+    color: #fff;
+}
+
+.back {
+    background-color: #D9D9D9;
+    text-align: center;
+}
+.cont-btn{
+    display: flex;
+    justify-content: center;
+}
+.btn-Audio {
+  position: fixed;      
+  bottom: 0;            
+  left: 50%;            
+  transform: translateX(-50%);
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  border-radius: 100px 100px 0 0; 
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+.btn-Audio img{
+    max-width: 80px;
+}
+
+/* Responsive Tablet */
+@media (min-width: 760px) and (max-width: 1024px) {
+  .element-icons {
+    font-size: 60px;
+  }
+  .element-buttons button {
+    width: 120px;
+    height: 60px;
+  }
+}
+
+/* Responsive Celuco */
+@media (max-width: 760px) {
+  header {
+    min-height: auto; 
+    text-align: center;
+  }
+
+  .layout-header {
+    flex-direction: row; 
+    align-items: center;
+  }
+
+  .element-icons {
+    font-size: 40px;   
+    justify-content: center;
+  }
+  .element-icons img{
+    width: 80px;
+  }
+
+  .element-buttons {
+    justify-content: center;
+    gap: 1rem; 
+    flex-wrap: wrap;  
+  }
+
+  .element-buttons button {
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
