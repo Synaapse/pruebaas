@@ -1,13 +1,27 @@
 // --- 🚍 Datos de rutas ---
 const rutas = [
-{ origen: "Estación Central", destino: "Parque Norte", bus: "Bus-14" },
-{ origen: "Plaza Sur", destino: "Estación Central", bus: "Bus-22" },
-{ origen: "Parque Norte", destino: "Plaza Sur", bus: "Bus-7" },
-{ origen: "Portal 20 de Julio", destino: "Portal Dorado", bus: "TransMilenio A23" },
-{ origen: "Portal Dorado", destino: "Portal 20 de Julio", bus: "TransMilenio A23" },
-{ origen: "Universidad", destino: "Centro", bus: "Ruta Universitaria" },
-{ origen: "Terminal Norte", destino: "Terminal Sur", bus: "TransMilenio B12" },
-{ origen: "Centro", destino: "Universidad", bus: "Ruta Universitaria" }
+  { origen: "Portal Américas", destino: "Portal El Dorado", bus: "TransMilenio K10" },
+  { origen: "Portal El Dorado", destino: "Portal Américas", bus: "TransMilenio F10" },
+  { origen: "Portal Norte", destino: "Portal Suba", bus: "TransMilenio C5" },
+  { origen: "Portal Suba", destino: "Portal Norte", bus: "TransMilenio B5" },
+  { origen: "Portal Tunal", destino: "Portal 80", bus: "TransMilenio D7" },
+  { origen: "Portal 80", destino: "Portal Tunal", bus: "TransMilenio H7" },
+  { origen: "Portal 20 de Julio", destino: "Portal Banderas", bus: "TransMilenio F23" },
+  { origen: "Portal Banderas", destino: "Portal 20 de Julio", bus: "TransMilenio L23" },
+  { origen: "Portal de las Américas", destino: "Portal Usme", bus: "TransMilenio H2" },
+  { origen: "Portal Usme", destino: "Portal de las Américas", bus: "TransMilenio F2" },
+  { origen: "Portal El Tunal", destino: "Portal Norte", bus: "TransMilenio B11" },
+  { origen: "Portal Norte", destino: "Portal El Tunal", bus: "TransMilenio H11" },
+  { origen: "Portal Suba", destino: "Portal Américas", bus: "TransMilenio F7" },
+  { origen: "Portal Américas", destino: "Portal Suba", bus: "TransMilenio C7" },
+  { origen: "Portal 80", destino: "Portal Dorado", bus: "TransMilenio K9" },
+  { origen: "Portal Dorado", destino: "Portal 80", bus: "TransMilenio D9" },
+  { origen: "Portal Usme", destino: "Portal El Dorado", bus: "TransMilenio K15" },
+  { origen: "Portal El Dorado", destino: "Portal Usme", bus: "TransMilenio H15" },
+  { origen: "Portal 20 de Julio", destino: "Portal Norte", bus: "TransMilenio B8" },
+  { origen: "Portal Norte", destino: "Portal 20 de Julio", bus: "TransMilenio L8" },
+  { origen: "Portal Suba", destino: "Portal Banderas", bus: "TransMilenio F10" },
+  { origen: "Portal Banderas", destino: "Portal Suba", bus: "TransMilenio C10" },
 ];
 
 let paso = 0;
@@ -222,4 +236,5 @@ cerrarModalVoz();
 // Función global para compatibilidad
 window.abrirModalVoz = abrirModalVoz;
 window.cerrarModalVoz = cerrarModalVoz;
+
 window.iniciarDictado = iniciarDictado;
